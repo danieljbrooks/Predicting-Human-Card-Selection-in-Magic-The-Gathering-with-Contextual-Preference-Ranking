@@ -188,7 +188,7 @@ def main(training_path,test_path):
     test_out = os.path.dirname(os.path.realpath(__file__)) + '/Data//test_data/'
     os.mkdir(test_out)
     preprocess_data(card_dict,test_path,test_out)
-    print('Preproessing test data into datasets')
+    print('Preprocessing test data into datasets')
     test_dataset_out = os.path.dirname(os.path.realpath(__file__)) + '/Data//test_datasets/'
     os.mkdir(test_dataset_out)
     preprocess_data_into_dataset(test_out,test_dataset_out)
